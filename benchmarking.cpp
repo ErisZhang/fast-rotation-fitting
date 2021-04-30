@@ -164,7 +164,8 @@ int main(int argc, char* argv[])
         const double tic = igl::get_seconds();
         for (int i = 0; i < nM ; i++) 
         {
-          eigen_svd(Mfloat.block(i*3, 0, 3, 3), R_svd);
+          const Eigen::Matrix3f Mi = Mfloat.block(i*3, 0, 3, 3);
+          eigen_svd(Mi, R_svd);
         }
         if(pass==1)
         {

@@ -9,9 +9,8 @@
 //   M  3x3 covariance matrix
 // Outputs:
 //   R  3x3 nearest rotation matrix
-//
 template <typename T>
-inline void horneig(
+void horneig(
   const Eigen::Matrix<T,3,3> & S,
   Eigen::Matrix<T,3,3> & R)
 {

@@ -1,7 +1,6 @@
 #include <Eigen/Core>
 #include <iostream>
 
-
 template <typename T>
 void mbcm(
     const Eigen::Matrix<T,3,3> &A,
